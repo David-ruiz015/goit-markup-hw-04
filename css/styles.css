@@ -339,13 +339,14 @@ header .container .contacts-menu li .item:hover .icon {
 .portafolio .cards {
   justify-content: space-between;
   flex-wrap: wrap;
-
   display: flex;
 }
+
 .portafolio .cards li {
   margin-bottom: 50px;
   width: 360px;
   border: solid 1px var(--gray-1);
+  list-style: none;
 }
 .portafolio .cards li:hover {
   box-shadow: rgba(82, 82, 82, 0.3) 0 3px 5px;
