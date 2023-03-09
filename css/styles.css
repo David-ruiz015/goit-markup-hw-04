@@ -184,6 +184,7 @@ header .container .contacts-menu li .item:hover .icon {
 .hero button {
   position: relative;
   z-index: 5;
+  cursor: pointer;
 }
 .hero .overlay {
   position: absolute;
@@ -243,7 +244,27 @@ header .container .contacts-menu li .item:hover .icon {
 .what-we-do .container ul li {
   list-style: none;
   width: 360px;
+  background-image: rgba(47, 48, 58, 0.8);
+  background: no-repeat;
+  background-size: cover;
+  position: relative;
 }
+
+.what-we-do .container ul li p{
+  position: absolute;
+  bottom: 0%;
+  color: white;
+  width: 358px;
+  height: 70px;
+  top: 210px;
+  left: 1px;
+  padding: 25px;
+  text-align:center;
+  background-color:rgba(47, 48, 58, 0.8);
+  
+}
+
+
 /*----------- OurTeam section -----------*/
 .team-section {
   background-color: var(--gray-1);
@@ -322,7 +343,7 @@ header .container .contacts-menu li .item:hover .icon {
   border: none;
   outline: none;
   color: var(--primary-black-color);
-
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.4;
@@ -412,7 +433,7 @@ footer {
 }
 footer .logo {
   padding-left: 15px;
-  color: var(--primary-white-color);
+  color: var(--accent-color);
 }
 footer .container {
   display: flex;
@@ -422,6 +443,7 @@ footer .container {
 }
 footer .container address ul {
   list-style: none;
+  
 }
 footer .container address .contact {
   display: block;
@@ -442,27 +464,29 @@ footer .container aside p {
   margin-bottom: 20px;
 }
 
-footer .container aside ul {
+footer .container aside ul{
   display: flex;
   align-items: center;
   list-style: none;
   gap: 10px;
 }
 
-footer .container aside ul li:hover {
+footer .container aside ul li{
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-color:var(--accent-color);
+  background-color: var(--primary-white-10Perc);
   border-radius: 25px;
   box-shadow: hsla(0, 0%, 0%, 0.479) 0 3px 5px;
   cursor: pointer;
-  height: 35px;
-  width: 35px;
+  height: 44px;
+  width: 44px;
 }
 
-footer .container aside ul li .icon{
- 
+footer .container aside ul li .icon {
   fill: var(--primary-white-color);
+}
+footer .container aside ul li:hover{
+  background-color: var(--accent-color-hover);
 }
